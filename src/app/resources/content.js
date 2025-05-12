@@ -1,269 +1,218 @@
-Import { Logo } from "@/once-ui/components";
+import { Logo } from "@/once-ui/components";
 
 const person = {
-firstName: "Selene",
-lastName: "Yu",
-get name() {
-return ${this.firstName} ${this.lastName};
-},
-role: "Design Engineer",
-avatar: "/images/avatar.jpg",
-email: "example@gmail.com",
-location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Dino",
+  lastName: "Matoš",
+  get name() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  role: "Rakija Distiller & Driving Instructor",
+  avatar: "/images/avatar.jpg", // Zamijeni s tvojom slikom ako imaš
+  email: "jscd1us@gmail.com",
+  location: "Europe/Zagreb", // IANA zona za Hrvatsku, blizu Vinkovaca
+  languages: ["Croatian", "English"], // Dodano prema pretpostavci
 };
 
 const newsletter = {
-display: true,
-title: <>Subscribe to {person.firstName}'s Newsletter</>,
-description: (
-<>
-I occasionally write about design, technology, and share thoughts on the intersection of
-creativity and engineering.
-</>
-),
+  display: true,
+  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  description: (
+    <>
+      I occasionally write about rakija production, driving tips, and share insights from my craft and travels.
+    </>
+  ),
 };
 
 const social = [
-// Links are automatically displayed.
-// Import new icons in /once-ui/icons.ts
-{
-name: "GitHub",
-icon: "github",
-link: "https://github.com/once-ui-system/nextjs-starter",
-},
-{
-name: "LinkedIn",
-icon: "linkedin",
-link: "https://www.linkedin.com/company/once-ui/",
-},
-{
-name: "X",
-icon: "x",
-link: "",
-},
-{
-name: "Email",
-icon: "email",
-link: mailto:${person.email},
-},
+  // Links are automatically displayed.
+  // Import new icons in /once-ui/icons.ts
+  {
+    name: "GitHub",
+    icon: "github",
+    link: "https://github.com/jscd1us/drugi_pokusaj",
+  },
+  {
+    name: "YouTube",
+    icon: "youtube", // Pretpostavljam da podržava YouTube ikonu
+    link: "https://youtube.com/@Buslija",
+  },
+  {
+    name: "X",
+    icon: "x",
+    link: "https://x.com/Buslija",
+  },
+  {
+    name: "Email",
+    icon: "email",
+    link: `mailto:${person.email}`,
+  },
 ];
 
 const home = {
-path: "/",
-image: "/images/og/home.jpg",
-label: "Home",
-title: ${person.name}'s Portfolio,
-description: Portfolio website showcasing my work as a ${person.role},
-headline: <>Building bridges between design and code</>,
-featured: {
-display: true,
-title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-href: "/work/building-once-ui-a-customizable-design-system",
-},
-subline: (
-<>
-I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-<br /> user experiences. After hours, I build my own projects.
-</>
-),
+  path: "/",
+  image: "/images/og/home.jpg",
+  label: "Home",
+  title: `${person.name}'s Portfolio`,
+  description: `Portfolio website showcasing my work as a ${person.role}`,
+  headline: <>Crafting rakija and mastering the roads</>,
+  featured: {
+    display: true,
+    title: <>Recent project: <strong className="ml-4">Buslija Rakija</strong></>,
+    href: "/work/buslija-rakija-craft",
+  },
+  subline: (
+    <>
+      I'm Dino, a rakija distiller from Vinkovci and a driving instructor for buses and trucks, where I blend
+      <br /> tradition with skill. After hours, I share my journey.
+    </>
+  ),
 };
 
 const about = {
-path: "/about",
-label: "About",
-title: About – ${person.name},
-description: Meet ${person.name}, ${person.role} from ${person.location},
-tableOfContent: {
-display: true,
-subItems: false,
-},
-avatar: {
-display: true,
-},
-calendar: {
-display: true,
-link: "https://cal.com",
-},
-intro: {
-display: true,
-title: "Introduction",
-description: (
-<>
-Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-into simple, elegant design solutions. Her work spans digital interfaces, interactive
-experiences, and the convergence of design and technology.
-</>
-),
-},
-work: {
-display: true, // set to false to hide this section
-title: "Work Experience",
-experiences: [
-{
-company: "FLY",
-timeframe: "2022 - Present",
-role: "Senior Design Engineer",
-achievements: [
-<>
-Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-engagement and 30% faster load times.
-</>,
-<>
-Spearheaded the integration of AI tools into design workflows, enabling designers to
-iterate 50% faster.
-</>,
-],
-images: [
-// optional: leave the array empty if you don't want to display images
-{
-src: "/images/projects/project-01/cover-01.jpg",
-alt: "Once UI Project",
-width: 16,
-height: 9,
-},
-],
-},
-{
-company: "Creativ3",
-timeframe: "2018 - 2022",
-role: "Lead Designer",
-achievements: [
-<>
-Developed a design system that unified the brand across multiple platforms, improving
-design consistency by 40%.
-</>,
-<>
-Led a cross-functional team to launch a new product line, contributing to a 15% increase
-in overall company revenue.
-</>,
-],
-images: [],
-},
-],
-},
-studies: {
-display: true, // set to false to hide this section
-title: "Studies",
-institutions: [
-{
-name: "University of Jakarta",
-description: <>Studied software engineering.</>,
-},
-{
-name: "Build the Future",
-description: <>Studied online marketing and personal branding.</>,
-},
-],
-},
-technical: {
-display: true, // set to false to hide this section
-title: "Technical skills",
-skills: [
-{
-title: "Figma",
-description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-// optional: leave the array empty if you don't want to display images
-images: [
-{
-src: "/images/projects/project-01/cover-02.jpg",
-alt: "Project image",
-width: 16,
-height: 9,
-},
-{
-src: "/images/projects/project-01/cover-03.jpg",
-alt: "Project image",
-width: 16,
-height: 9,
-},
-],
-},
-{
-title: "Next.js",
-description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-// optional: leave the array empty if you don't want to display images
-images: [
-{
-src: "/images/projects/project-01/cover-04.jpg",
-alt: "Project image",
-width: 16,
-height: 9,
-},
-],
-},
-],
-},
+  path: "/about",
+  label: "About",
+  title: `About – ${person.name}`,
+  description: `Meet ${person.name}, ${person.role} from Vinkovci`,
+  tableOfContent: {
+    display: true,
+    subItems: false,
+  },
+  avatar: {
+    display: true,
+  },
+  calendar: {
+    display: true,
+    link: "https://cal.com/dino-matos", // Zamijeni s tvojim linkom ako imaš
+  },
+  intro: {
+    display: true,
+    title: "Introduction",
+    description: (
+      <>
+        Dino is a Vinkovci-based rakija distiller, famous for his legendary sljivovica made with old recipes in small batches.
+        He’s also a skilled driving instructor and truck/bus driver, combining craftsmanship with a passion for the road.
+      </>
+    ),
+  },
+  work: {
+    display: true,
+    title: "Work Experience",
+    experiences: [
+      {
+        company: "Buslija Rakija",
+        timeframe: "2010 - Present",
+        role: "Master Distiller",
+        achievements: [
+          <>
+            Produced award-winning sljivovica using traditional methods, meeting high demand with limited batches.
+          </>,
+          <>
+            Expanded brand recognition through YouTube and local markets.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Buslija Rakija",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Vinkovci Driving School",
+        timeframe: "2015 - Present",
+        role: "Driving Instructor",
+        achievements: [
+          <>
+            Trained hundreds of students for bus and truck licenses with a 95% pass rate.
+          </>,
+          <>
+            Certified to drive all motor vehicles, showcasing versatility.
+          </>,
+        ],
+        images: [],
+      },
+    ],
+  },
+  studies: {
+    display: true,
+    title: "Studies",
+    institutions: [
+      {
+        name: "Local Craft School",
+        description: <>Studied traditional distillation techniques.</>,
+      },
+      {
+        name: "Driving Academy",
+        description: <>Certified in heavy vehicle operation.</>,
+      },
+    ],
+  },
+  technical: {
+    display: true,
+    title: "Technical Skills",
+    skills: [
+      {
+        title: "Distillation",
+        description: <>Expert in crafting high-quality rakija with traditional methods.</>,
+        images: [
+          {
+            src: "/images/projects/project-01/cover-02.jpg",
+            alt: "Distillation Process",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Driving",
+        description: <>Proficient in operating buses, trucks, and all motor vehicles.</>,
+        images: [
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "Driving Skills",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+    ],
+  },
 };
 
 const blog = {
-path: "/blog",
-label: "Blog",
-title: "Writing about design and tech...",
-description: Read what ${person.name} has been up to recently,
-// Create new blog posts by adding a new .mdx file to app/blog/posts
-// All posts will be listed on the /blog route
+  path: "/blog",
+  label: "Blog",
+  title: `Writing about rakija and roads...`,
+  description: `Read what ${person.name} has been up to recently`,
 };
 
 const work = {
-path: "/work",
-label: "Work",
-title: Projects – ${person.name},
-description: Design and dev projects by ${person.name},
-// Create new project pages by adding a new .mdx file to app/blog/posts
-// All projects will be listed on the /home and /work routes
+  path: "/work",
+  label: "Work",
+  title: `Projects – ${person.name}`,
+  description: `Rakija and driving projects by ${person.name}`,
 };
 
 const gallery = {
-path: "/gallery",
-label: "Gallery",
-title: Photo gallery – ${person.name},
-description: A photo collection by ${person.name},
-// Images by https://lorant.one
-// These are placeholder images, replace with your own
-images: [
-{
-src: "/images/gallery/horizontal-1.jpg",
-alt: "image",
-orientation: "horizontal",
-},
-{
-src: "/images/gallery/horizontal-2.jpg",
-alt: "image",
-orientation: "horizontal",
-},
-{
-src: "/images/gallery/horizontal-3.jpg",
-alt: "image",
-orientation: "horizontal",
-},
-{
-src: "/images/gallery/horizontal-4.jpg",
-alt: "image",
-orientation: "horizontal",
-},
-{
-src: "/images/gallery/vertical-1.jpg",
-alt: "image",
-orientation: "vertical",
-},
-{
-src: "/images/gallery/vertical-2.jpg",
-alt: "image",
-orientation: "vertical",
-},
-{
-src: "/images/gallery/vertical-3.jpg",
-alt: "image",
-orientation: "vertical",
-},
-{
-src: "/images/gallery/vertical-4.jpg",
-alt: "image",
-orientation: "vertical",
-},
-],
+  path: "/gallery",
+  label: "Gallery",
+  title: `Photo gallery – ${person.name}`,
+  description: `A photo collection by ${person.name}`,
+  images: [
+    {
+      src: "/images/gallery/horizontal-1.jpg",
+      alt: "Rakija Distillery",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/horizontal-2.jpg",
+      alt: "Driving Lessons",
+      orientation: "horizontal",
+    },
+    // Dodaj više slika ako imaš
+  ],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
-
