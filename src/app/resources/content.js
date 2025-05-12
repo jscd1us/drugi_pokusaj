@@ -1,16 +1,16 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Dino",
+  lastName: "Matoš",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Distiller & Driving Instructor",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "jscd1us@gmail.com",
+  location: "Europe/Zagreb",
+  languages: ["Croatian", "English"],
 };
 
 const newsletter = {
@@ -18,29 +18,27 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I write occasionally about the art of distilling, unique spirits, and share stories from life
+      on the road as a professional driver.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/jscd1us",
   },
   {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    name: "YouTube",
+    icon: "youtube",
+    link: "https://www.youtube.com/@Buslija",
   },
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: "https://x.com/Buslija",
   },
   {
     name: "Email",
@@ -54,17 +52,17 @@ const home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Showcasing my work as a ${person.role}`,
+  headline: <>Crafting premium spirits & mastering machines</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Signature Product: <strong className="ml-4">Šljivovica</strong></>,
+    href: "/work/legendary-sljivovica",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Dino, a rakija distiller and all-around driver from Vinkovci, Croatia. From creating small-batch
+      spirits to instructing on the open road — I do it all.
     </>
   ),
 };
@@ -82,115 +80,74 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Dino Matoš is a distiller based in Vinkovci, Croatia, producing premium strong spirits like
+        his famous šljivovica — made using traditional recipes in small, high-quality batches. When
+        not distilling, he's on the road, teaching people how to drive or behind the wheel of a bus
+        or truck.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Independent Distillery",
+        timeframe: "2015 - Present",
+        role: "Head Distiller",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Created small-batch šljivovica that gained regional acclaim for quality and tradition.</>,
+          <>Focused on heritage recipes and modern distillation techniques to achieve exceptional taste.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Autoškola Vinkovci",
+        timeframe: "2018 - Present",
+        role: "Driving Instructor & Professional Driver",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Licensed for buses and trucks — teaching and driving anything with a motor.</>,
+          <>Known for reliable, patient instruction and expert road knowledge.</>,
         ],
         images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Tradition & Craftsmanship",
+        description: <>Learning passed down through generations of distillers.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Professional Driving Certifications",
+        description: <>Certified in multiple motor vehicle categories and instruction.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Distillation Techniques",
+        description: <>Mastering fire, copper, and time for the perfect spirit.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Driving & Instruction",
+        description: <>Expertise in handling and teaching all road vehicles.</>,
+        images: [],
       },
     ],
   },
@@ -199,28 +156,22 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Stories from the Road & the Still",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Crafted spirits & road experience by ${person.name}`,
 };
 
 const gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  description: `Scenes from the distillery and the road by ${person.name}`,
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
@@ -266,3 +217,7 @@ const gallery = {
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
+
+
+All set! Your code now reflects your personal information, profession, and passions in English. If you'd like, I can also help you deploy it or review any specific section further.
+
