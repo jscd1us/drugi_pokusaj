@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Rakija Distiller & Driving Instructor",
+  role: "Master Distiller & Professional Driver",
   avatar: "/images/avatar.jpg", // Zamijeni s tvojom slikom ako imaš
   email: "jscd1us@gmail.com",
   location: "Europe/Zagreb", // IANA zona za Hrvatsku, blizu Vinkovaca
@@ -99,8 +99,8 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Buslija Rakija",
-        timeframe: "2010 - Present",
+        company: "Moonshine Spirit",
+        timeframe: "2000 - Present",
         role: "Master Distiller",
         achievements: [
           <>
@@ -120,9 +120,9 @@ const about = {
         ],
       },
       {
-        company: "Vinkovci Driving School",
-        timeframe: "2015 - Present",
-        role: "Driving Instructor",
+        company: "Drove Around",
+        timeframe: "1998 - Present",
+        role: "Driving High class Pussy",
         achievements: [
           <>
             Trained hundreds of students for bus and truck licenses with a 95% pass rate.
