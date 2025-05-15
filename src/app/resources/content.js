@@ -150,35 +150,42 @@ const about = {
     ],
   },
   technical: {
-    display: true,
-    title: "Technical Skills",
-    skills: [
-      {
-        title: "Distillation",
-        description: <>Expert in crafting high-quality rakija with traditional methods.</>,
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Distillation Process",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Driving",
-        description: <>Proficient in operating buses, trucks, and all motor vehicles.</>,
-        images: [
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Driving Skills",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
+  display: true,
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "Distillation",
+      description: <>Expert in crafting high-quality rakija with traditional methods.</>,
+      images: [
+        {
+          src: "/images/mocan-kazan.jpg",
+          alt: "Traditional copper distillation unit",
+          width: 400,
+          height: 300,
+        },
+        {
+          src: "/images/mjerenje.jpg",
+          alt: "Measuring alcohol content",
+          width: 400,
+          height: 300,
+        },
+      ],
+    },
+    {
+      title: "Driving",
+      description: <>Experienced in training, instructing, and operating all categories of vehicles.</>,
+      images: [
+        {
+          src: "/images/sljive.jpg",
+          alt: "At the starting point of it all",
+          width: 400,
+          height: 300,
+        },
+      ],
+    },
+  ],
+},
+
 };
 
 const blog = {
