@@ -158,7 +158,7 @@ const about = {
         description: <>Expert in crafting high-quality rakija with traditional methods.</>,
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-01/cover-high_vol_1440x810",
             alt: "Distillation Process",
             width: 16,
             height: 9,
