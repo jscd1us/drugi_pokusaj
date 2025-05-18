@@ -158,7 +158,7 @@ const about = {
         description: <>Expert in crafting high-quality rakija with traditional methods.</>,
         images: [
           {
-            src: "/images/projects/project-01/cover-high_vol_1440x810",
+            src: "/images/projects/project-01/high_vol_1440x810",
             alt: "Distillation Process",
             width: 16,
             height: 9,
@@ -170,7 +170,7 @@ const about = {
         description: <>Proficient in operating buses, trucks, and all motor vehicles.</>,
         images: [
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-01/kurto_i_ja_bus_1440x810.jpg",
             alt: "Driving Skills",
             width: 16,
             height: 9,
