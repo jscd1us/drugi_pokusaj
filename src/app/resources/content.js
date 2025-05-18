@@ -112,7 +112,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/mocan_kazan_1440x810.jpg",
             alt: "Buslija Rakija",
             width: 16,
             height: 9,
