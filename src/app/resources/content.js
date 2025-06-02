@@ -9,7 +9,7 @@ const person = {
   role: "Master Distiller & Professional Driver",
   avatar: "/images/avatar.jpg", // Zamijeni s tvojom slikom ako imaš
   email: "jscd1us@gmail.com",
-  location: "Europe/Vinkovci", // IANA zona za Hrvatsku, blizu Vinkovaca
+  location: "Europe/Zagreb", // IANA zona za Hrvatsku, blizu Vinkovaca
   languages: ["Croatian", "English"], // Dodano prema pretpostavci
 };
 
